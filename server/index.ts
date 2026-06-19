@@ -36,11 +36,11 @@ app.post("/admin/pitches/login", (req, res) => {
 });
 
 app.get("/admin/pitches", requirePitchAdmin, (_req, res) => {
-  res.sendFile(path.join(publicDir, "admin-pitches.html"));
+  res.sendFile(path.join(publicDir, "admin/pitches/index.html"));
 });
 
 app.get("/admin/pitches/:slug", requirePitchAdmin, (_req, res) => {
-  res.sendFile(path.join(publicDir, "admin-pitch-detail.html"));
+  res.sendFile(path.join(publicDir, "admin/pitches/detail-template.html"));
 });
 
 app.use(express.static(publicDir, { extensions: ["html"], maxAge: "1h" }));
