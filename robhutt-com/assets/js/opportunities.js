@@ -6,7 +6,7 @@ export const opportunities = {
     password: "escape",
     campaignTitle: "Bring the dream to the people still stuck at their desks.",
     campaignSubtitle: "A lead-generation and brand storytelling activation that puts the campervan dream outside the office, on the one afternoon it lands hardest.",
-    heroImage: "linear-gradient(115deg, rgba(13,11,8,.34), rgba(13,11,8,.82)), url(\"https://res.cloudinary.com/drl0fxrkq/image/upload/v1781879712/791a09e28efa55098dcd091fc1234fb95a1b9ce7e8661cd540ed5403347a2a19_ynwfnj.jpg\") center/cover no-repeat",
+    heroImage: "https://res.cloudinary.com/drl0fxrkq/image/upload/v1781879712/791a09e28efa55098dcd091fc1234fb95a1b9ce7e8661cd540ed5403347a2a19_ynwfnj.jpg",
     humanInsight: {
       headline: "Most people do not start by wanting a campervan. They start by wanting their weekends back.",
       body: [
