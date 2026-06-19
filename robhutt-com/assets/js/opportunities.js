@@ -1,3 +1,10 @@
+/**
+ * @typedef {Object} OpportunityImageFields
+ * @property {string=} imagePrompt Ready-to-copy prompt for ChatGPT, Midjourney, Firefly or another image tool.
+ * @property {"needed"|"drafted"|"generated"|"approved"=} imagePromptStatus Current image prompt and generation workflow state.
+ * @property {string=} heroImage Generated hero image URL, or a temporary CSS gradient placeholder until an image exists.
+ */
+
 export const opportunities = {
   "camperking-workday-escape": {
     companyName: "CamperKing",
@@ -193,6 +200,8 @@ export function createPitchForAlternative(sourceSlug, priority) {
   cloned.campaignFamilyId = source.campaignFamilyId || familySlug;
   cloned.originalPitchSlug = sourceSlug;
   cloned.alternativeTargets = [];
+  cloned.imagePromptStatus = cloned.imagePrompt ? "drafted" : "needed";
+  cloned.heroImage = "";
   cloned.pitchAdmin = {
     ...(cloned.pitchAdmin || {}),
     status: "draft",
